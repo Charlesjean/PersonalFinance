@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ParseStarterProjectActivity!</string>
+    <string name="app_name">老婆管账</string>
+    <string name="drawopen">Open Drawer</string>
+    <string name="drawclose">Close Drawer</string>
+    <string name="record">记一笔</string>
+    
+    <string name="record_date">日期</string>
+    <string name="record_category">类别</string>
+    <string name="record_amount">金额</string>
+    <string name="record_account">账户</string>
+    <string name="record_save_again">保存再记</string>
+    
+</resources>
