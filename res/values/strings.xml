@@ -12,4 +12,19 @@
     <string name="record_account">账户</string>
     <string name="record_save_again">保存再记</string>
     
+    <string-array name="record_categories">
+        <item>早中晚饭</item>
+        <item>行车交通</item>
+        <item>房租住宿</item>
+        <item>服装饰品</item>
+        <item>娱乐腐败</item>
+        <item>生活杂项</item>
+    </string-array>
+    
+    <string-array name="record_account_types">
+        <item>现金支付</item>
+        <item>银行卡</item>
+        <item>支付宝等</item>
+    </string-array>
+    
 </resources>
