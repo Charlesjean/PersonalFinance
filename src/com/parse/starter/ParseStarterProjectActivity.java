@@ -66,7 +66,7 @@ public class ParseStarterProjectActivity extends FragmentActivity {
 		mDrawerLayout.setDrawerListener(mDrawerToggle);
 		this.setUpDrawerListItem();
 		this.setUpActionBar();
-		this.setUpHomeFragment();
+		this.setUpFragment(0);
 		
 		ParseAnalytics.trackAppOpened(getIntent());
 	}
@@ -100,12 +100,12 @@ public class ParseStarterProjectActivity extends FragmentActivity {
 		mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 			@Override
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+			public void onItemClick(AdapterView<?> arg0, View arg1, int pos,
 					long arg3) {
-				((DrawerListAdapter)mDrawerList.getAdapter()).setSelectedIndex(arg2);
+				((DrawerListAdapter)mDrawerList.getAdapter()).setSelectedIndex(pos);
 				ParseStarterProjectActivity.this.getActionBar().setTitle(((DrawerListAdapter)mDrawerList.getAdapter()).getSelectedItemTitle());
 				mDrawerLayout.closeDrawers();
-				
+				setUpFragment(pos);
 			}
 		});
 	}
@@ -117,11 +117,34 @@ public class ParseStarterProjectActivity extends FragmentActivity {
 		actionbar.setTitle(R.string.app_name);
 	}
 	
-	private void setUpHomeFragment() {
-		FragmentManager fm = this.getSupportFragmentManager();
-		FragmentTransaction ft = fm.beginTransaction();
-		HomeFragment homeFrag = new HomeFragment();
-		ft.add(R.id.container, homeFrag);
-		ft.commit();
+	private void setUpFragment(int pos) {
+
+		CustomFragment fragment = null;
+		switch(pos) {
+		case 0:
+			fragment = new HomeFragment();
+			break;
+		case 1:
+			break;
+		case 2:
+			fragment  = new StatementFragment();
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		case 6:
+			break;
+		
+		}
+		if (fragment != null) {
+			FragmentManager fm = this.getSupportFragmentManager();
+			FragmentTransaction ft = fm.beginTransaction();
+			ft.replace(R.id.container, fragment);
+			ft.commit();
+		}
 	}	
+	
 }

@@ -11,6 +11,8 @@
     <string name="record_amount">金额</string>
     <string name="record_account">账户</string>
     <string name="record_save_again">保存再记</string>
+    <string name="record_warning">请输入金额</string>
+    <string name="record_warning_dialog_button">确定</string>
     
     <string-array name="record_categories">
         <item>早中晚饭</item>
@@ -26,5 +28,8 @@
         <item>银行卡</item>
         <item>支付宝等</item>
     </string-array>
+    
+    <string name="statement_left">&lt;</string>
+    <string name="statement_right">&gt;</string>
     
 </resources>

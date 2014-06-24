@@ -12,7 +12,7 @@ import android.support.v4.app.DialogFragment;
 
 public class CategorySelectDialog extends DialogFragment {
 	public interface CategorySelectListener {
-		public void onItemSelected(ArrayList<String> items);
+		public void onItemSelected(ArrayList<Integer> items);
 	}
 
 	public final static String CATEGORY_LISTENER = "category_select_listener";
@@ -20,7 +20,7 @@ public class CategorySelectDialog extends DialogFragment {
 	public final static String SELECTED_ITEM = "SELECTED_ITEM";
 	
 	private CategorySelectListener mListener;
-	public ArrayList<String> mSelectedItem;
+	public ArrayList<Integer> mSelectedItem;
 	
 	public static CategorySelectDialog newInstance(CategorySelectListener listener, String[] items, int selectedItem) {
 		CategorySelectDialog dialog = new CategorySelectDialog();
@@ -35,7 +35,7 @@ public class CategorySelectDialog extends DialogFragment {
 	
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
-		this.mSelectedItem = new ArrayList<String>();
+		this.mSelectedItem = new ArrayList<Integer>();
 		AlertDialog.Builder builder = new AlertDialog.Builder(this.getActivity());
 		builder.setTitle("—°‘Ò¿‡–Õ");
 		
@@ -46,7 +46,7 @@ public class CategorySelectDialog extends DialogFragment {
 
 			@Override
 			public void onClick(DialogInterface arg0, int arg1) {
-				mSelectedItem.add(items[arg1]);
+				mSelectedItem.add(arg1);
 			}
 			
 		});

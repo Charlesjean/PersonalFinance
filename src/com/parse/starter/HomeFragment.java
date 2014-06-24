@@ -76,7 +76,6 @@ public class HomeFragment extends CustomFragment implements TabChangeListener{
 				ft.addToBackStack(null);
 				ft.commit();
 			}
-			
 		});
 		return view;
 	}
