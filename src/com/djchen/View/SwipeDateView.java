@@ -6,16 +6,13 @@ import com.parse.starter.R;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.StateSet;
 import android.view.GestureDetector;
-import android.view.GestureDetector.OnGestureListener;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewConfiguration;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;

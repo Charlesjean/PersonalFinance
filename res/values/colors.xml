@@ -141,4 +141,11 @@
  <color name="DarkBlue">#00008B</color>
  <color name="Navy">#000080</color>
  <color name="Black">#000000</color>
+ 
+ <color name="Chart_Purple">#51613c</color>
+ <color name="Chart_Blue">#3F9FE0</color>
+ <color name="Chart_Yellow">#F4842D</color>
+ <color name="Chart_Red">#C74B46</color>
+ <color name="Chart_Green">#96AA39</color>
+ <color name="Chart_Darkgray">#666666</color>
 </resources>

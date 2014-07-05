@@ -28,8 +28,12 @@
         <item>银行卡</item>
         <item>支付宝等</item>
     </string-array>
-    
     <string name="statement_left">&lt;</string>
-    <string name="statement_right">&gt;</string>
+    <string name="statement_right">&gt;</string>    
+    
+    <!-- UI String -->
+    <string name="circle_total">预算</string>
+    <string name="circle_spent">消费</string>
+    
     
 </resources>

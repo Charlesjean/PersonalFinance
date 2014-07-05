@@ -1,0 +1,38 @@
+package com.djchen.model;
+
+import android.graphics.Color;
+
+public class RecordPresentationEntry {
+	private String category = null;
+	private double amount = 0.0;
+	private Color color = null;
+	
+	public RecordPresentationEntry() {
+		
+	}
+	public RecordPresentationEntry(String category, double amount, Color color) {
+		this.category = category;
+		this.amount = amount;
+		this.color = color;
+	}
+	
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	public Color getColor() {
+		return color;
+	}
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
+}

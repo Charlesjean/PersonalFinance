@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <array name="chart_colors">
+     <item>@color/Chart_Purple</item>
+     <item>@color/Chart_Blue</item>
+     <item>@color/Chart_Yellow</item>
+     <item>@color/Chart_Red</item>
+     <item>@color/Chart_Green</item>
+     <item>@color/Chart_Darkgray</item>
+ </array>
+</resources>
