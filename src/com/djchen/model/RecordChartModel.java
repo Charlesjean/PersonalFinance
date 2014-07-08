@@ -57,8 +57,8 @@ public class RecordChartModel {
 		double subtotal = 0;
 		for (int i = 0; i < this.mEntryPercent.size(); ++i) {
 			subtotal += this.mEntryPercent.get(i);
-			Color color = this.mEntryList.get(i).getColor();
-			tmpMap.put(subtotal, color);
+			//Color color = this.mEntryList.get(i).getColor();
+			//tmpMap.put(subtotal, color);
 		}
 		return tmpMap;		
 	}

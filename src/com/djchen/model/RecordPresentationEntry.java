@@ -5,12 +5,12 @@ import android.graphics.Color;
 public class RecordPresentationEntry {
 	private String category = null;
 	private double amount = 0.0;
-	private Color color = null;
+	private int color ;
 	
 	public RecordPresentationEntry() {
 		
 	}
-	public RecordPresentationEntry(String category, double amount, Color color) {
+	public RecordPresentationEntry(String category, double amount, int color) {
 		this.category = category;
 		this.amount = amount;
 		this.color = color;
@@ -28,10 +28,10 @@ public class RecordPresentationEntry {
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-	public Color getColor() {
+	public int getColor() {
 		return color;
 	}
-	public void setColor(Color color) {
+	public void setColor(int color) {
 		this.color = color;
 	}
 

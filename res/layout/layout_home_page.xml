@@ -3,72 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    <FrameLayout 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2">
-        <com.djchen.View.RecordChartView 
-        android:id="@+id/chart_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-        <LinearLayout 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical"
-            >
-            <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/circle_total"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center"
-            android:textSize="18sp"/>
-            <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="220842"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center"
-            android:textColor="@color/Green"
-            android:layout_marginBottom="5dp"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
-            <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/circle_spent"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center"
-            android:textSize="18sp"/>
-            <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="104533"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center"
-            android:textColor="@color/Red"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginBottom="15dp"/>
-            <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="56%"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
-        </LinearLayout>
-
-    </FrameLayout>
-
-    <com.djchen.View.RecordChartView 
+	<com.djchen.View.RecordChartContainer
+	    android:id="@+id/chart_view_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"/>
+     <ListView 
         android:id="@+id/bar_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="3"/>
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
 
 </LinearLayout>

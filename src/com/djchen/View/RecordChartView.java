@@ -15,7 +15,7 @@ import android.animation.ValueAnimator.AnimatorUpdateListener;
 
 import com.parse.starter.R;
 
-public class RecordChartView extends View implements AnimatorUpdateListener{
+public class RecordChartView extends View {
 
 	private RecordChartModel mModel = null; 
 
@@ -31,25 +31,19 @@ public class RecordChartView extends View implements AnimatorUpdateListener{
 	
 	public RecordChartView(Context context) {
 		super(context);
-		//colorArray = context.getResources().getIntArray(R.array.chart_colors);
+		this.strokeSize = this.getResources().getDimensionPixelSize(R.dimen.circle_width);
+
 	}
 	
 	public RecordChartView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		//colorArray = context.getResources().getIntArray(R.array.chart_colors);
+		this.strokeSize = this.getResources().getDimensionPixelSize(R.dimen.circle_width);
 	}
 	
 	public RecordChartView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
-		//colorArray = context.getResources().getIntArray(R.array.chart_colors);
-	}
-	
-	public void startAnimation() {
-		this.animator = ValueAnimator.ofFloat(0, 1.0f);
-		this.animator.setDuration(duration);
-		this.animator.addUpdateListener(this);
-		this.animator.start();
 		this.strokeSize = this.getResources().getDimensionPixelSize(R.dimen.circle_width);
+		
 	}
 	
 	@Override
@@ -76,8 +70,6 @@ public class RecordChartView extends View implements AnimatorUpdateListener{
 	    		break;
 	    	}
 	    }
-	    
-
 		super.onDraw(canvas);
 	}
 
@@ -90,12 +82,6 @@ public class RecordChartView extends View implements AnimatorUpdateListener{
 		this.mModel = mModel;
 	}
 
-	@Override
-	public void onAnimationUpdate(ValueAnimator animation) {
-		this.percent = (Float) animation.getAnimatedValue();
-		this.invalidate();
-	}
-
 	public int getDuration() {
 		return duration;
 	}
@@ -104,6 +90,10 @@ public class RecordChartView extends View implements AnimatorUpdateListener{
 		this.duration = duration;
 	}
 
+	public void setPercent(float percent) {
+		this.percent = percent;
+		this.invalidate();
+	}
 
 	
 
