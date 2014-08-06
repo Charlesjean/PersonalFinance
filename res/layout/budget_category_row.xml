@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/top_padding_dim" >
+<ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/left_padding_dim"
+    android:src="@drawable/ic_compose"/>
+<RelativeLayout 
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <TextView 
+        android:id="@+id/budget_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/small_padding_dim"
+        android:textSize="@dimen/text_size_medium"
+        android:paddingBottom="@dimen/bottom_padding_dim"/>
+    <TextView 
+        android:id="@+id/total_budget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:layout_below="@id/budget_category"
+        android:text="@string/budget_category_total"/>
+    <TextView 
+        android:id="@+id/budget_category_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/total_budget_text"
+        android:layout_alignBottom="@id/total_budget_text"
+        android:textSize="@dimen/text_size_small"/>
+    <com.djchen.View.RecordBarView 
+        android:id="@+id/budget_category_used_to_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/budget_category"
+        android:layout_alignParentRight="false"
+        android:layout_marginRight="@dimen/right_padding_dim"
+        android:paddingBottom="@dimen/bottom_padding_dim"
+        android:layout_alignBottom="@id/budget_category"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/LightGrey"/>
+    <TextView 
+        android:id="@+id/budget_category_let"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:layout_below="@id/budget_category_used_to_total"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/right_padding_dim"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:text="@string/budget_category_left"
+        android:layout_toLeftOf="@id/budget_category_let"
+        android:layout_alignBottom="@id/budget_category_let"/>
+
+</RelativeLayout>
+
+</LinearLayout>

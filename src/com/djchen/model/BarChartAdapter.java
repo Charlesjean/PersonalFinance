@@ -36,7 +36,7 @@ public class BarChartAdapter extends ArrayAdapter<RecordPresentationEntry> {
 		TextView amount = (TextView)row.findViewById(R.id.bar_chart_amount);
 		amount.setText(this.getItem(position).getAmount() + "");
 		RecordBarView colorView = (RecordBarView)row.findViewById(R.id.bar_chart_color_view);
-		colorView.setColor(this.getItem(position).getColor());	
+		colorView.setColorRes(this.getItem(position).getColor());	
 		colorView.setPercent(this.getItem(position).getAmount() / totalAmount);
 		colorView.startAnimation();
 		return row;

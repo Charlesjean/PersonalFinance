@@ -53,6 +53,8 @@ public class AddRecordFragment extends CustomFragment implements DatePickerDialo
 		LayoutInflater inflate = (LayoutInflater)this.getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View view = inflate.inflate(R.layout.layout_add_record_screen, null);
 		
+		this.getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
+		
 		//date
 		mSetDateBtn = (Button)view.findViewById(R.id.record_set_date);
 		mSetDateBtn.setOnClickListener(clickListener);

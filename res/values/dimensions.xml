@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="circle_width">0.1in</dimen>
+    
+    <dimen name="left_padding_dim">10dp</dimen>
+    <dimen name="right_padding_dim">10dp</dimen>
+    <dimen name="top_padding_dim">5dp</dimen>
+    <dimen name="bottom_padding_dim">5dp</dimen>
+    <dimen name="small_padding_dim">5dp</dimen>
+    
+    <dimen name="text_Size">22sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
 </resources>

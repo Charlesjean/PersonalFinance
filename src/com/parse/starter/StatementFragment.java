@@ -5,7 +5,6 @@ import com.djchen.model.StatementListAdapter;
 import com.djchen.View.SwipeDateView;
 
 import android.content.Context;
-import android.graphics.DashPathEffect;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

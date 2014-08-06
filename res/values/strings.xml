@@ -14,6 +14,14 @@
     <string name="record_warning">请输入金额</string>
     <string name="record_warning_dialog_button">确定</string>
     
+    <string name="budget_total">总预算：</string>
+    <string name="budget_used">已用：</string>
+    <string name="budget_left">结余：</string>
+    <string name="budget_category_total">总额：</string>
+    <string name="budget_category_left">余额：</string>
+    
+    
+    
     <string-array name="record_categories">
         <item>早中晚饭</item>
         <item>行车交通</item>
@@ -35,5 +43,7 @@
     <string name="circle_total">预算</string>
     <string name="circle_spent">消费</string>
     
-    
+    <string name="home_tab_me">我的消费</string>
+    <string name="homt_tab_other">对方消费</string>
+    <string name="homt_tab_total">总计消费</string>
 </resources>

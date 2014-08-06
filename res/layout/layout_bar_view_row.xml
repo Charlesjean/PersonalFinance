@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" 
     android:paddingTop="5dp"
-    android:paddingBottom="5dp">
+    android:paddingBottom="5dp"
+    android:background="@color/app_body_color">
     <TextView 
         android:id="@+id/bar_chart_category"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="@color/LightGrey"
         />
     <TextView 
         android:id="@+id/bar_chart_amount"

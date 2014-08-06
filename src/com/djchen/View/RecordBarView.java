@@ -33,7 +33,7 @@ public class RecordBarView extends View implements AnimatorUpdateListener{
 		super.onDraw(canvas);
 	}
 	
-	public void setColor(int resId)
+	public void setColorRes(int resId)
 	{
 		this.color_id = resId;
 	}

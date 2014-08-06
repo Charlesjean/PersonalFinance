@@ -148,4 +148,13 @@
  <color name="Chart_Red">#C74B46</color>
  <color name="Chart_Green">#96AA39</color>
  <color name="Chart_Darkgray">#666666</color>
+ 
+ <color name="budget_bar_chart_color">#FF4500</color>
+ <color name="app_primary">#3f51b5</color>
+ <color name="tab_text_highlightcolor">#DB4437</color>
+ <color name="tab_text_color">#ffffff</color>
+ <color name="tab_indicator_highlightcolor">#DB4437</color>
+ <color name="tab_indicator_color">#ffffff</color>
+ <color name="app_action_color">#FF4081</color>
+ <color name="app_body_color">#E4E3E4</color>
 </resources>

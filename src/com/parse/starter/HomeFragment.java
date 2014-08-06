@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.view.View.OnClickListener;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
@@ -25,18 +26,21 @@ public class HomeFragment extends CustomFragment implements TabChangeListener{
 	public ViewPager mPager;
 	private CustomTab btnTabs[];
 	public int mcurrentPage = 0;
-	public Button mRecordBtn;
+	public ImageButton mRecordBtn;
 	
 	public HomeFragment() {
 		super();
-		tabs.add("Me");
-		tabs.add("Other");
-		tabs.add("Total");
 	}
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
 		this.mActivity = activity;
+		String str1 = this.getResources().getString(R.string.home_tab_me);
+		tabs.add(str1);
+		str1 = this.getResources().getString(R.string.homt_tab_other);
+		tabs.add(str1);
+		str1 = this.getResources().getString(R.string.homt_tab_total);
+		tabs.add(str1);
 	}
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,7 +51,7 @@ public class HomeFragment extends CustomFragment implements TabChangeListener{
 		mPager.setAdapter(new HomePageAdapter(this.getChildFragmentManager(), tabs));
 		mPager.setCurrentItem(mcurrentPage);
 		this.setUpCustomTab(view);
-		mRecordBtn = (Button)view.findViewById(R.id.add_button);
+		mRecordBtn = (ImageButton)view.findViewById(R.id.compose_button);
 		mPager.setOnPageChangeListener(new OnPageChangeListener() {
 
 			@Override
@@ -98,9 +102,9 @@ public class HomeFragment extends CustomFragment implements TabChangeListener{
 	}
 	private void setUpCustomTab(View view) {
 		this.btnTabs = new CustomTab[PAGENUM];
-		this.btnTabs[0] = new CustomTab(view, R.id.btn_user, R.id.btn_user_indicator, 0, tabs.get(0), this);
-		this.btnTabs[1] = new CustomTab(view, R.id.btn_associate, R.id.btn_associate_indicator, 1, tabs.get(1), this);
-		this.btnTabs[2] = new CustomTab(view, R.id.btn_total, R.id.btn_total_indicator, 2, tabs.get(2), this);
+		this.btnTabs[0] = new CustomTab(view, R.id.btn_user, R.id.btn_user_indicator, 0, tabs.get(0), this, this.getActivity());
+		this.btnTabs[1] = new CustomTab(view, R.id.btn_associate, R.id.btn_associate_indicator, 1, tabs.get(1), this, this.getActivity());
+		this.btnTabs[2] = new CustomTab(view, R.id.btn_total, R.id.btn_total_indicator, 2, tabs.get(2), this, this.getActivity());
 		this.btnTabs[mcurrentPage].makeHighlight();
 		
 	}

@@ -132,6 +132,7 @@ public class ParseStarterProjectActivity extends FragmentActivity {
 		case 3:
 			break;
 		case 4:
+			fragment = new BudgetFragment();
 			break;
 		case 5:
 			break;

@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/app_body_color" >
     <LinearLayout 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -32,7 +33,8 @@
             android:layout_weight="1"
             android:background="@null"
             android:textSize="22sp"
-            android:gravity="right|center"/>
+            android:gravity="right|center"
+            android:textColor="@color/app_action_color"/>
     </LinearLayout>
     <LinearLayout 
         android:layout_width="match_parent"
@@ -55,7 +57,8 @@
             android:layout_weight="1"
             android:background="@null"
             android:textSize="22sp"
-            android:gravity="right|center"/>
+            android:gravity="right|center"
+            android:textColor="@color/app_action_color"/>
     </LinearLayout>
     <LinearLayout 
         android:layout_width="match_parent"
@@ -103,7 +106,8 @@
             android:layout_weight="1"
             android:background="@null"
             android:textSize="22sp"
-            android:gravity="right|center"/>
+            android:gravity="right|center"
+            android:textColor="@color/app_action_color"/>
     </LinearLayout>
     </LinearLayout>
 
@@ -120,7 +124,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/record_save_again"
-            android:background="@android:color/holo_blue_dark"
+            android:background="@color/app_primary"
             android:textSize="28sp"
             android:textColor="#ccc"
             android:layout_gravity="bottom"/>
