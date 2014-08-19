@@ -97,10 +97,31 @@
         android:layout_weight="1"
         >
     </ListView>
-    <com.djchen.View.EditTextBackEvent
-        android:id="@+id/budget_edit"
+    <LinearLayout 
+        android:id="@+id/edit_layout_container"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView 
+            android:id="@+id/budget_edit_category_name"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_Size"
+            android:gravity="center"/>
+        <com.djchen.View.EditTextBackEvent
+        android:id="@+id/budget_edit"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:visibility="gone"/>
+        android:imeOptions="actionDone"
+        android:gravity="right"/>
+        <Button 
+            android:id="@+id/budget_edit_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/budget_edit_done_btn"/>
+    </LinearLayout>
+
 </LinearLayout>

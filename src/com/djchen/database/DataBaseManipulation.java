@@ -2,6 +2,7 @@ package com.djchen.database;
 
 import java.util.ArrayList;
 
+import com.djchen.model.BudgetEntry;
 import com.djchen.model.Statement;
 
 import android.content.ContentValues;
@@ -47,6 +48,11 @@ public class DataBaseManipulation {
 			db.close();
 	}
 	
+	/**
+	 * 向数据库添加新的消费记录
+	 * @param record 
+	 * @return 返回插入记录的id
+	 */
 	public long addRecord(Record record) {
 		ContentValues value = new ContentValues();
 		value.put(Record.RECORD_TYPE, record.getRecordType());
@@ -59,11 +65,14 @@ public class DataBaseManipulation {
 		SQLiteDatabase db = this.openWritableDB();
 		long id = db.insert(DataBaseHelper.TABLE_RECORD, null, value);
 		db.close();
-		
 		return id;
-		
 	}
 	
+	/**
+	 * 根据record_id 查询消费记录相关的信息
+	 * @param record_id
+	 * @return 返回消费记录对象
+	 */
 	public Record getRecord(long record_id) {
 		String selectQuery = " SELECT * FROM " + DataBaseHelper.TABLE_RECORD 
 				+ " WHERE " + DataBaseHelper.KEY_ID + " = " + record_id;
@@ -90,7 +99,12 @@ public class DataBaseManipulation {
 		this.openWritableDB().execSQL("DROP TABLE IF EXISTS " + tableName);
 	}
 	
-	//get statement from database according to date period
+	/**
+	 * 得到某一时间段内的所有消费记录
+	 * @param fromDate 起始时间
+	 * @param toDate 终止时间
+	 * @return 此时间段内的所有消费记录的数组
+	 */
 	public ArrayList<Statement> queryStatements(String fromDate, String toDate) {
 		String querySql = " SELECT " + Record.RECORD_TYPE + ", " + Record.RECORD_AMOUNT
 				+ ", " + Record.RECORD_ACCOUNT + ", " + Record.RECORD_CATEGORY + ", " + Record.RECORD_DATE + " FROM " +
@@ -131,7 +145,12 @@ public class DataBaseManipulation {
 		return statements;
 	}
 	
-	//get record count for each date between fromDate and toDate
+	/**
+	 * 得到在一段时间内的每一天所对应的消费记录的条数
+	 * @param fromDate
+	 * @param toDate
+	 * @return 
+	 */
 	public ArrayList<DateCountPair> getCountByDate(String fromDate, String toDate) {
 		String queryString = "SELECT COUNT(*) ," + Record.RECORD_DATE + " FROM " + DataBaseHelper.TABLE_RECORD
 				+ " WHERE " + Record.RECORD_DATE + " BETWEEN '" + fromDate + "' " + " AND '" + toDate +"' " 
@@ -155,6 +174,86 @@ public class DataBaseManipulation {
 		return array;
 	}
 	
+	/**
+	 * 想数据库中插入或者更新数据库中已有的数据
+	 * @param budget
+	 */
+	public void updateOrInsertBudget(Budget budget) {
+		updateOrInsertBudget(budget.getBudgetType(), budget.getBudgetAmount());
+	}
+
+	public void updateOrInsertBudget(String budgettype, double amount) {
+		String queryString = "Select " + DataBaseHelper.KEY_ID + " FROM " + DataBaseHelper.TABLE_BUDGET + 
+				" WHERE " + DataBaseHelper.BUDGET_TYPE + " = " + "'" + budgettype + "'";
+		SQLiteDatabase db = this.openWritableDB();
+		Cursor c = db.rawQuery(queryString, null);
+		ContentValues value = new ContentValues();
+		value.put(DataBaseHelper.BUDGET_TYPE, budgettype);
+		value.put(DataBaseHelper.BUDGET_AMOUNT, amount);
+		if(c == null || c.getCount() ==0) { // we need to insert new row
+			db.insert(DataBaseHelper.TABLE_BUDGET, null, value);
+		}
+		else { // we need to update row
+			db.update(DataBaseHelper.TABLE_BUDGET, value, DataBaseHelper.BUDGET_TYPE + " = '" + budgettype + "'", null);
+		}
+	}
+	
+	/**
+	 * 得到在给定时间段内，指定类型的预算的信息，包括预算金额，已使用金额等
+	 * @param budgetType 指定的预算类型
+	 * @param startDate 起始时间
+	 * @param endDate  终止时间
+	 */
+	public BudgetEntry queryBudgetAmountAndCost(String budgetType, String startDate, String endDate) {
+		
+		//得到基本的预算额度
+		Budget budget = this.queryBudget(budgetType);
+		double spentAmount = this.queryTotalSpentForBudget(budgetType, startDate, endDate);
+		return new BudgetEntry(budgetType, budget.getBudgetAmount(), spentAmount);		
+	}
+	
+	private double queryTotalSpentForBudget(String budgetType, String startDate, String endDate) {
+		String queryString = "SELECT SUM(" + Record.RECORD_AMOUNT + ") FROM " + DataBaseHelper.TABLE_RECORD +
+				" WHERE " + Record.RECORD_CATEGORY + " = '" + budgetType +"' AND " + Record.RECORD_DATE 
+				+ " BETWEEN '" + startDate + "' " + " AND '" + endDate +"' ";
+		
+		SQLiteDatabase db = this.openReadableDB();
+		Cursor c = db.rawQuery(queryString, null);
+		if(c != null && c.getCount() > 0) {
+			c.moveToFirst();
+			return c.getDouble(0);
+		}
+		else {
+			return 0;
+		}
+		
+	}
+	
+	/**
+	 *得到指定类型的预算的相关信息, 如果数据库中没有指定的预算类型，那么返回预算值为0
+	 * @param budgetType
+	 * @return
+	 */
+	private Budget queryBudget(String budgetType) {
+		String queryS = "SELECT " + DataBaseHelper.BUDGET_AMOUNT +
+				" FROM " + DataBaseHelper.TABLE_BUDGET + " WHERE " + DataBaseHelper.BUDGET_TYPE + 
+				" = " + "'" + budgetType + "'";
+		SQLiteDatabase db = this.openReadableDB();
+		Cursor c = db.rawQuery(queryS, null);
+		if(c != null && c.getCount() > 0) {
+			c.moveToFirst();
+			return new Budget(budgetType, c.getDouble(c.getColumnIndex(DataBaseHelper.BUDGET_AMOUNT)));
+		}
+		else {
+			return new Budget(budgetType, 0);
+			
+		}
+			
+	}
+	
+	/**
+	 * test function
+	 */
 	public void contentTest() {
 		String querySql = " SELECT " + " * " + " FROM " +
 				DataBaseHelper.TABLE_RECORD;

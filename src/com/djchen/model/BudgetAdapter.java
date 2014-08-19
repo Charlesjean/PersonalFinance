@@ -34,10 +34,13 @@ public class BudgetAdapter extends ArrayAdapter<BudgetEntry> {
 		amount.setText(""+ this.getItem(position).getBudgetAmount());
 		TextView left = (TextView)convertView.findViewById(R.id.budget_category_let);
 		left.setText(""+ (this.getItem(position).getBudgetAmount() - this.getItem(position).getBudgetUsed()));
-		if(this.getItem(position).getBudgetAmount() == 0.0 || this.getItem(position).getBudgetUsed() == 0)
-			return convertView;
+		
+			
 		RecordBarView barView = (RecordBarView)convertView.findViewById(R.id.budget_category_used_to_total);
-		barView.setPercent(this.getItem(position).getBudgetUsed() / this.getItem(position).getBudgetAmount());
+		if(this.getItem(position).getBudgetAmount() == 0.0)
+			barView.setPercent(0);
+		else
+			barView.setPercent((this.getItem(position).getBudgetAmount() - this.getItem(position).getBudgetUsed()) / this.getItem(position).getBudgetAmount());
 		barView.setColorRes(R.color.budget_bar_chart_color);
 		barView.startAnimation();
 		return convertView;

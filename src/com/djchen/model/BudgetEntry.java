@@ -23,4 +23,8 @@ public class BudgetEntry {
 	public double getBudgetUsed() {
 		return this.budget_used;
 	}
+	
+	public void setBudgetAmount(double newAmount) {
+		this.budget_amount = newAmount;
+	}
 }

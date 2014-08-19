@@ -28,7 +28,7 @@ public class RecordBarView extends View implements AnimatorUpdateListener{
 	protected void onDraw(Canvas canvas) {
 		
 		rect.set(0, 0, (int)(this.getWidth() * this.animatedPercent), this.getHeight());
-		paint.setColor(this.getResources().getColor(color_id));
+		paint.setColor(this.getContext().getResources().getColor(color_id));
 		canvas.drawRect(rect, paint);
 		super.onDraw(canvas);
 	}
