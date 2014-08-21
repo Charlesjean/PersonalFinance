@@ -1,12 +1,10 @@
 package com.parse.starter;
 
-import java.util.ArrayList;
 
-import com.djchen.View.RecordChartView;
+import java.util.ArrayList;
 import com.djchen.View.RecordChartContainer;
+import com.djchen.database.DataBaseManipulation;
 import com.djchen.model.BarChartAdapter;
-import com.djchen.model.DrawerListAdapter;
-import com.djchen.model.DrawerListItem;
 import com.djchen.model.RecordPresentationEntry;
 
 import android.app.Activity;
@@ -18,31 +16,58 @@ import android.widget.ListView;
 
 public class HomePagerFragment extends CustomFragment {
 
+	enum USER{CURRENT, ASSOCIATE, BOTH};
 	private RecordChartContainer chartContainer;
 	private ListView barView;
+	
+	private int user_type;
+	DataBaseManipulation db;
+	
+	
+	//we use type to determin which user info the fragment should show,
+	//0 for current user, 1 for associate user, 2 for both of them
+	private static final String USER_TYPE = "usertype";
+	
+	public static CustomFragment newInstance(int argc) {
+		HomePagerFragment fragment = new HomePagerFragment();
+		Bundle bundle = new Bundle();
+		bundle.putInt(USER_TYPE, argc);
+		fragment.setArguments(bundle);
+		return fragment;
+	}
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		Bundle arguments = getArguments();
+		if (arguments != null) {
+			user_type = arguments.getInt(USER_TYPE);
+		}
+	}
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.layout_home_page, null);
 
+		//TODO we need to read data from database according to arguments stored in bundle
 		ArrayList<RecordPresentationEntry> entries = this.tempData();
 		
 		chartContainer = (RecordChartContainer)view.findViewById(R.id.chart_view_container);
 		chartContainer.setTotalAmount(10000);
 		chartContainer.setSpentAmount(5000);
 		chartContainer.startAnimation();
-		
-		
+				
 		barView = (ListView)view.findViewById(R.id.bar_view);
-		
 		barView.setAdapter(new BarChartAdapter(this.getActivity(), 0, entries));
-		
 		return view; 
 	}
 
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
+		db = new DataBaseManipulation(getActivity());
+		
 	}
 
 	@Override
@@ -80,5 +105,5 @@ public class HomePagerFragment extends CustomFragment {
 		}
 		return entries;		
 	}
-
+	
 }

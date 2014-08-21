@@ -1,7 +1,10 @@
 package com.parse.starter;
 
-import java.util.ArrayList;
+/**
+ * 
+ */
 
+import java.util.ArrayList;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -13,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -28,18 +32,20 @@ public class BudgetFragment extends CustomFragment {
 
 	//widgets on this fragment
 	ListView mBudgetList;
-	EditTextBackEvent mEditView;
-	TextView mEditCategoryName;
+	EditTextBackEvent mEditView;//edit view above keyboard
+	TextView mEditCategoryName;//category name above keyboard
 	BudgetAdapter mbudgetListAdapter;
-	LinearLayout mEditLayoutContainer;
-	DataBaseManipulation db = new DataBaseManipulation(getActivity());
+	LinearLayout mEditLayoutContainer;//layout above keyboard
+	
+	EditText mBudgetTotal;
+	TextView mBudgetTotalUsed;
+	TextView mBudgetTotalLeft;
+		
+	DataBaseManipulation db;
 	//helper instance to hide/show the attach view of keyboard
 	private CheckPostionRunnable mPositionRunnable = new CheckPostionRunnable();
 	public Handler mhandler = new Handler();
-	
-	public int selected_Budget_Type_Pos;
-	
-	
+	public int selected_Budget_Type_Pos;	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -56,6 +62,10 @@ public class BudgetFragment extends CustomFragment {
 		mEditView = (EditTextBackEvent)view.findViewById(R.id.budget_edit);
 		mEditCategoryName = (TextView)view.findViewById(R.id.budget_edit_category_name);
 		
+		mBudgetTotal = (EditText)view.findViewById(R.id.budegt_total);
+		mBudgetTotalUsed = (TextView)view.findViewById(R.id.budget_total_used);
+		mBudgetTotalLeft = (TextView)view.findViewById(R.id.budget_total_left);
+		
 		//set listener to listen to IME_ACTION_DONE
 		//when done is pressed on keyboard, we dismiss keyboard,
 		//read user's input and write it into database
@@ -67,13 +77,14 @@ public class BudgetFragment extends CustomFragment {
 					inputManager.hideSoftInputFromWindow(mEditView.getWindowToken(), 0);
 					db.updateOrInsertBudget(mbudgetListAdapter.getItem(selected_Budget_Type_Pos).getCategory(), Double.parseDouble(mEditView.getText().toString()));
 					mbudgetListAdapter.getItem(selected_Budget_Type_Pos).setBudgetAmount(Double.parseDouble(mEditView.getText().toString()));
+					updateBudgetHeadInfo();
 					mbudgetListAdapter.notifyDataSetChanged();
 				}
 				return false;
 			}
 		});
-		this.setFakedListData();
 		mBudgetList.setAdapter(mbudgetListAdapter);
+		this.updateBudgetHeadInfo();
 		//populate the budget listView, and listen to click event to pop up keyboard and attach view.
 		mBudgetList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -94,15 +105,13 @@ public class BudgetFragment extends CustomFragment {
 		});
 		return view;
 	}	
+	
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
-		db = new DataBaseManipulation(getActivity());
-		
-		
+		db = new DataBaseManipulation(getActivity());	
+		this.setFakedListData();
 	}
-
-
 
 	@Override
 	public void onDetach() {
@@ -110,7 +119,6 @@ public class BudgetFragment extends CustomFragment {
 		db.closeDB();
 	}
 
-	//TODO we just use faked data now, will read from database and replace this method
 	private void setFakedListData() {
 		ArrayList<BudgetEntry> listEntry = new ArrayList<BudgetEntry>();
 		String[] categories = this.getResources().getStringArray(R.array.record_categories);
@@ -119,16 +127,22 @@ public class BudgetFragment extends CustomFragment {
 			listEntry.add(entry);
 		}
 		mbudgetListAdapter = new BudgetAdapter(this.getActivity(), R.layout.budget_category_row, listEntry);
-		
 	}
 	
-	
+	private void updateBudgetHeadInfo() {
+		double totalBudget = mbudgetListAdapter.getTotalBudget();
+		double totalSpent = mbudgetListAdapter.getTotalSpent();
+		double totalLeft = totalBudget - totalSpent;
+		mBudgetTotal.setText(totalBudget + "");
+		mBudgetTotalUsed.setText(totalSpent + "");
+		mBudgetTotalLeft.setText(totalLeft + "");
+	}
+		
 	/**
 	 * Inner class to check the position of the linearLayout above the keyboard,
 	 * we need to use this position to decide when to hide the layout.
 	 */
     public void startCheckPosition() {
-    	
     	this.mPositionRunnable.stop();
     	this.mPositionRunnable.start();
     	new Thread(this.mPositionRunnable).start();
@@ -145,7 +159,6 @@ public class BudgetFragment extends CustomFragment {
     	
     	public void start()	{
     		needToCheck  = true;
-    		
     	}
     	public void stop() {
     		needToCheck  = false;

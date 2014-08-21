@@ -46,6 +46,22 @@ public class BudgetAdapter extends ArrayAdapter<BudgetEntry> {
 		return convertView;
 	}
 	
+	public double getTotalBudget() {
+		double total = 0;
+		for(int i = 0; i < this.getCount(); ++i) {
+			total += this.getItem(i).getBudgetAmount();
+		}
+		return total;
+	}
 	
+	public double getTotalSpent() {
+		double spent = 0;
+		for(int i = 0; i < this.getCount(); ++i) {
+			spent += this.getItem(i).getBudgetUsed();
+		}
+		
+		return spent;
+		
+	}
 
 }
