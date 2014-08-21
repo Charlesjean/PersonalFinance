@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.android.ide.eclipse.adt.package.feature:23.0.2.1259578"/>
+		<item value="org.eclipse.cdt.build.crossgcc:1.1.0.201302132326"/>
+		<item value="org.eclipse.cdt.bupc:1.0.3.201302132326"/>
+		<item value="org.eclipse.cdt.core.lrparser.feature:5.2.0.201302132326"/>
+		<item value="org.eclipse.cdt.core.parser.upc.feature:5.1.0.201302132326"/>
+		<item value="org.eclipse.cdt.debug.edc:2.0.0.201202112006"/>
+		<item value="org.eclipse.cdt.debug.gdbjtag:7.0.0.201302132326"/>
+		<item value="org.eclipse.cdt.examples.dsf:2.1.0.201211091924"/>
+		<item value="org.eclipse.cdt.gdb:7.0.0.201302132326"/>
+		<item value="org.eclipse.cdt.launch.remote:6.0.0.201302132326"/>
+		<item value="org.eclipse.cdt.p2:1.0.0.201211091924"/>
+		<item value="org.eclipse.cdt.sdk:8.1.2.201302132326"/>
+		<item value="org.eclipse.cdt.util:5.1.0.201211091924"/>
+		<item value="org.eclipse.cdt.xlc.feature:6.3.1.201302132326"/>
+		<item value="org.eclipse.cdt:8.1.2.201302132326"/>
+		<item value="org.eclipse.egit.import:2.2.0.201212191850-r"/>
+		<item value="org.eclipse.egit:2.2.0.201212191850-r"/>
+		<item value="org.eclipse.emf.common:2.9.1.v20130827-0309"/>
+		<item value="org.eclipse.emf.ecore:2.9.1.v20130827-0309"/>
+		<item value="org.eclipse.help:1.4.1.v20120912-144938-8R7xFOXFLWUl7PpNBh_HIGkb4"/>
+		<item value="org.eclipse.jgit:2.2.0.201212191850-r"/>
+		<item value="org.eclipse.platform:4.2.1.v20130118-173121-9MF7GHYdG0B5kx4E_SkfZV-1mNjVATf67ZAb7"/>
+		<item value="org.eclipse.rcp:4.2.2.v20130129-152330-7IARAABrMQkGSvMgQnUlz-DQz00h"/>
+		<item value="org.eclipse.rse.core:3.4.1.201209191030-7a7NFm27sResTNgNeS4R"/>
+		<item value="org.eclipse.rse.dstore:3.4.1.201209191030-7L79FYz7VFNVGMOMNFcF"/>
+		<item value="org.eclipse.rse.ftp:3.1.0.201209191030-782FBV8377A6N8PB6J84"/>
+		<item value="org.eclipse.rse.local:2.1.400.201209191030-7B4FSg7J9EJ9rErE9O9"/>
+		<item value="org.eclipse.rse.ssh:3.0.400.201209191030-7A4FEc7F7BF7gBgB7J7"/>
+		<item value="org.eclipse.rse.telnet:2.3.0.201209191030-775FD3879AE8YB_E8OA4"/>
+		<item value="org.eclipse.rse.terminals:1.2.1.201209191030-773Ep7H8AG8_DZK9Q9252"/>
+		<item value="org.eclipse.rse:3.4.1.201209191030-7L7IFBY83omx__z0RFpKdWB-r5MS"/>
+		<item value="org.eclipse.tm.terminal:3.2.1.201209191030-41031231A2A2141"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+	</section>
+</section>
