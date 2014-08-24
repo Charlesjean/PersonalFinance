@@ -110,7 +110,7 @@ public class BudgetFragment extends CustomFragment {
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
 		db = new DataBaseManipulation(getActivity());	
-		this.setFakedListData();
+		this.getBudgetInfo();
 	}
 
 	@Override
@@ -119,7 +119,14 @@ public class BudgetFragment extends CustomFragment {
 		db.closeDB();
 	}
 
-	private void setFakedListData() {
+	/**
+	 * This function is used to get budget info of current month,
+	 * info including:
+	 * 	 total budget for this month
+	 * 	 total budget for each category
+	 *   total used for each category
+	 */
+	private void getBudgetInfo() {
 		ArrayList<BudgetEntry> listEntry = new ArrayList<BudgetEntry>();
 		String[] categories = this.getResources().getStringArray(R.array.record_categories);
 		for(int i = 0; i < categories.length; ++i) {
