@@ -96,7 +96,7 @@ public class SwipeDateView extends LinearLayout implements GestureDetector.OnGes
 				new int[]{android.R.attr.state_pressed},
 				StateSet.WILD_CARD};
 		int[] colors = {this.getResources().getColor(R.color.LightSalmon),
-				this.getResources().getColor(R.color.LavenderBlush)};
+				this.getResources().getColor(R.color.app_primary)};
 		ColorStateList colorList = new ColorStateList(states, colors);
 		left.setTextColor(colorList);
 		right.setTextColor(colorList);

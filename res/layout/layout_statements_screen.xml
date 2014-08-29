@@ -8,21 +8,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal" 
-    android:background="@color/LightSalmon">
+    android:background="@color/app_body_color">
        <com.djchen.View.SwipeDateView 
            android:id="@+id/statement_date_view"
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:gravity="center_horizontal"/>
    </LinearLayout>
-   <ExpandableListView 
+   <com.djchen.View.AnimatedExpandableListView
        android:id="@+id/statement_day_list"
        android:layout_width="match_parent"
        android:layout_height="0dp"
        android:choiceMode="singleChoice"
        android:layout_weight="1"
-       android:divider="@null"
-       android:dividerHeight="10dp"
+       android:divider="@color/White"
+       android:dividerHeight="2dp"
        android:paddingTop="10dp"
        android:childDivider="@drawable/statement_child_seperator"
              />

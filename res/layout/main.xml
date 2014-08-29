@@ -20,22 +20,31 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="140dp">
-            <ImageView 
-                android:id="@+id/drawer_background"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/background"/>
+            android:layout_height="140dp"
+            android:background="@color/app_body_color">
+
             <RelativeLayout 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
+                android:layout_gravity="center"
              >
-            <TextView android:id="@+id/user_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:text="我是占位符"/>
+            <ImageView 
+                android:id="@+id/user_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_gravity="center|left"
+                android:src="@drawable/avatar"
+                android:contentDescription="avatar image"/>
+             <ImageView 
+                android:id="@+id/user_avatar2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="150dp"
+                android:layout_gravity="center|left"
+                android:src="@drawable/avatar"
+                android:contentDescription="avatar image"/>
+          
             </RelativeLayout>            
         </FrameLayout>
 
@@ -50,7 +59,7 @@
                 android:layout_gravity="start"
                 android:background="@color/app_body_color"
                 android:choiceMode="singleChoice"
-                android:divider="#999999"
+                android:divider="#cccccc"
                 android:dividerHeight="1dp" 
                 >
             </ListView>

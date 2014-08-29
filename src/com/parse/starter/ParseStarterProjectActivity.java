@@ -16,7 +16,7 @@ import android.support.v4.app.FragmentTransaction;
 
 import com.djchen.model.DrawerListAdapter;
 import com.djchen.model.DrawerListItem;
-import com.parse.ParseAnalytics;
+
 
 public class ParseStarterProjectActivity extends FragmentActivity {
 	/** Called when the activity is first created. */
@@ -67,8 +67,6 @@ public class ParseStarterProjectActivity extends FragmentActivity {
 		this.setUpDrawerListItem();
 		this.setUpActionBar();
 		this.setUpFragment(0);
-		
-		ParseAnalytics.trackAppOpened(getIntent());
 	}
 	
 	@Override

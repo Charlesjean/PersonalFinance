@@ -92,7 +92,10 @@ public class RecordChartContainer extends FrameLayout{
 				this.totalText.setText("" + value1);
 				double value2 = Double.parseDouble(df.format(this.spentAmount * percent));
 				this.spentText.setText("" + value2);
-				this.percentText.setText(""+ (int)(spent_total_percent*percent)+"%");
+				if(this.totalAmount == 0)
+					this.percentText.setText("----");
+				else
+					this.percentText.setText(""+ df.format(spent_total_percent*percent)+"%");
 			}
 			
 		}

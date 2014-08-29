@@ -1,8 +1,5 @@
 package com.parse.starter;
 
-import com.parse.Parse;
-import com.parse.ParseACL;
-import com.parse.ParseUser;
 
 import android.app.Application;
 
@@ -12,16 +9,7 @@ public class ParseApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 
-		// Add your initialization code here
-		Parse.initialize(this, "IFq9Fr3dRN5ycbMUYx8iiEhIbHUCX1E1Z6WXkUeP", "vA1CL4IkoZhOyQS3cob3h0S398LadZsDhYGsvRhB");
-
-		ParseUser.enableAutomaticUser();
-		ParseACL defaultACL = new ParseACL();
-	    
-		// If you would like all objects to be private by default, remove this line.
-		defaultACL.setPublicReadAccess(true);
-		
-		ParseACL.setDefaultACL(defaultACL, true);
+	
 	}
 
 }

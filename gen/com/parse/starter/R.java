@@ -184,30 +184,32 @@ public final class R {
         public static final int top_padding_dim=0x7f070003;
     }
     public static final class drawable {
-        public static final int background=0x7f020000;
-        public static final int compose_button_background=0x7f020001;
-        public static final int date=0x7f020002;
-        public static final int date2=0x7f020003;
-        public static final int ic_compose=0x7f020004;
-        public static final int ic_compose_56=0x7f020005;
-        public static final int ic_compose_pressed=0x7f020006;
-        public static final int ic_compose_pressed_56=0x7f020007;
-        public static final int ic_done_save_ok_blue=0x7f020008;
-        public static final int ic_done_save_ok_green=0x7f020009;
-        public static final int ic_drawer=0x7f02000a;
-        public static final int ic_launcher=0x7f02000b;
-        public static final int icon_1=0x7f02000c;
-        public static final int icon_2=0x7f02000d;
-        public static final int icon_3=0x7f02000e;
-        public static final int icon_4=0x7f02000f;
-        public static final int icon_5=0x7f020010;
-        public static final int icon_6=0x7f020011;
-        public static final int layout_border=0x7f020012;
-        public static final int people=0x7f020013;
-        public static final int people2=0x7f020014;
-        public static final int peoplet=0x7f020015;
-        public static final int save=0x7f020016;
-        public static final int statement_child_seperator=0x7f020017;
+        public static final int avatar=0x7f020000;
+        public static final int background=0x7f020001;
+        public static final int background2=0x7f020002;
+        public static final int compose_button_background=0x7f020003;
+        public static final int date=0x7f020004;
+        public static final int date2=0x7f020005;
+        public static final int ic_compose=0x7f020006;
+        public static final int ic_compose_56=0x7f020007;
+        public static final int ic_compose_pressed=0x7f020008;
+        public static final int ic_compose_pressed_56=0x7f020009;
+        public static final int ic_done_save_ok_blue=0x7f02000a;
+        public static final int ic_done_save_ok_green=0x7f02000b;
+        public static final int ic_drawer=0x7f02000c;
+        public static final int ic_launcher=0x7f02000d;
+        public static final int icon_1=0x7f02000e;
+        public static final int icon_2=0x7f02000f;
+        public static final int icon_3=0x7f020010;
+        public static final int icon_4=0x7f020011;
+        public static final int icon_5=0x7f020012;
+        public static final int icon_6=0x7f020013;
+        public static final int layout_border=0x7f020014;
+        public static final int people=0x7f020015;
+        public static final int people2=0x7f020016;
+        public static final int peoplet=0x7f020017;
+        public static final int save=0x7f020018;
+        public static final int statement_child_seperator=0x7f020019;
     }
     public static final class id {
         public static final int add_button=0x7f0a0023;
@@ -239,7 +241,6 @@ public final class R {
         public static final int child_record_type=0x7f0a0032;
         public static final int compose_button=0x7f0a0024;
         public static final int container=0x7f0a002b;
-        public static final int drawer_background=0x7f0a002d;
         public static final int drawer_frame=0x7f0a002c;
         public static final int drawer_item_list=0x7f0a0005;
         public static final int drawer_layout=0x7f0a002a;
@@ -271,7 +272,8 @@ public final class R {
         public static final int swipe_date_right=0x7f0a003c;
         public static final int tab=0x7f0a001a;
         public static final int total_budget_text=0x7f0a0001;
-        public static final int user_name=0x7f0a002e;
+        public static final int user_avatar=0x7f0a002d;
+        public static final int user_avatar2=0x7f0a002e;
     }
     public static final class layout {
         public static final int budget_category_row=0x7f030000;
