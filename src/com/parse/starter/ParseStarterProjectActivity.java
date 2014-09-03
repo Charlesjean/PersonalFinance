@@ -3,17 +3,22 @@ package com.parse.starter;
 import java.util.ArrayList;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
+import com.avos.avoscloud.AVAnalytics;
+import com.avos.avoscloud.AVObject;
 import com.djchen.model.DrawerListAdapter;
 import com.djchen.model.DrawerListItem;
 
@@ -23,6 +28,7 @@ public class ParseStarterProjectActivity extends FragmentActivity {
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;	
 	private ActionBarDrawerToggle mDrawerToggle;
+    private Button mLoginBtn;
 	
 	
 	//Tmp use variable
@@ -67,6 +73,18 @@ public class ParseStarterProjectActivity extends FragmentActivity {
 		this.setUpDrawerListItem();
 		this.setUpActionBar();
 		this.setUpFragment(0);
+
+        mLoginBtn = (Button)frame.findViewById(R.id.sign_in_btn);
+        mLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ParseStarterProjectActivity.this, LoginActivity.class);
+                ParseStarterProjectActivity.this.startActivity(intent);
+            }
+        });
+		
+		AVAnalytics.trackAppOpened(getIntent());
+		
 	}
 	
 	@Override
@@ -88,12 +106,13 @@ public class ParseStarterProjectActivity extends FragmentActivity {
 	
 	private void setUpDrawerListItem() {
 		listItem = new ArrayList<DrawerListItem>();
-		listItem.add(new DrawerListItem(R.drawable.icon_1, "主页"));
-		listItem.add(new DrawerListItem(R.drawable.icon_2, "账本"));
-		listItem.add(new DrawerListItem(R.drawable.icon_3, "流水"));
-		listItem.add(new DrawerListItem(R.drawable.icon_4, "统计"));
-		listItem.add(new DrawerListItem(R.drawable.icon_5, "预算"));
-		listItem.add(new DrawerListItem(R.drawable.icon_6, "设置"));
+        String listItemStr[] = this.getResources().getStringArray(R.array.drawer_list_item);
+		listItem.add(new DrawerListItem(R.drawable.icon_1, listItemStr[0]));
+		listItem.add(new DrawerListItem(R.drawable.icon_2, listItemStr[1]));
+		listItem.add(new DrawerListItem(R.drawable.icon_3, listItemStr[2]));
+		listItem.add(new DrawerListItem(R.drawable.icon_4, listItemStr[3]));
+		listItem.add(new DrawerListItem(R.drawable.icon_5, listItemStr[4]));
+		listItem.add(new DrawerListItem(R.drawable.icon_6, listItemStr[5]));
 		mDrawerList.setAdapter(new DrawerListAdapter(this, R.layout.drawer_list_row, listItem));
 		mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 

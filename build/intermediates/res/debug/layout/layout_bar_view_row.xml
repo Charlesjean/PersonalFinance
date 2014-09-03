@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/app_body_color">
+    <TextView 
+        android:id="@+id/bar_chart_category"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
+    
+    <com.djchen.View.RecordBarView
+        android:id="@+id/bar_chart_color_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/LightGrey"
+        />
+    <TextView 
+        android:id="@+id/bar_chart_amount"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"/>
+</LinearLayout>
+<!-- From: file:/E:/ParseStarterProject/res/layout/layout_bar_view_row.xml -->

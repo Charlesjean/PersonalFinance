@@ -69,11 +69,11 @@ public class StatementListAdapter2 extends AnimatedExpandableListAdapter {
 		//TextView dateText = (TextView)group.findViewById(R.id.group_date);
 		//dateText.setText(this.statements.get(groupPosition).getDate());
 		TextView amountText = (TextView)group.findViewById(R.id.group_total_amount);
-		amountText.setText("гд" + this.statements.get(groupPosition).getTotalCose()+"");
+		amountText.setText("??" + this.statements.get(groupPosition).getTotalCose()+"");
 		TextView userAmount = (TextView)group.findViewById(R.id.group_user_total);
-		userAmount.setText("гд" + this.statements.get(groupPosition).getUserTotalAmount()+"");
+		userAmount.setText("??" + this.statements.get(groupPosition).getUserTotalAmount()+"");
 		TextView associateUserAmount = (TextView)group.findViewById(R.id.group_associateuser_total);
-		associateUserAmount.setText("гд" + this.statements.get(groupPosition).getAssociateUserAmount()+"");
+		associateUserAmount.setText("??" + this.statements.get(groupPosition).getAssociateUserAmount()+"");
 		return group;
 	}
 
@@ -94,7 +94,7 @@ public class StatementListAdapter2 extends AnimatedExpandableListAdapter {
 		TextView typeText = (TextView)child.findViewById(R.id.child_record_type);
 		typeText.setText(this.statements.get(groupPosition).getUserRecords().get(childPosition).getCategory()+"");
 		TextView recordAmount = (TextView)child.findViewById(R.id.child_record_amount);
-		recordAmount.setText("гд" + this.statements.get(groupPosition).getUserRecords().get(childPosition).getAmount()+"");
+		recordAmount.setText("??" + this.statements.get(groupPosition).getUserRecords().get(childPosition).getAmount()+"");
 
 		return child;
 	}

@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="E:\ParseStarterProject\res" >
+            <file
+                name="compose_button_background"
+                path="E:\ParseStarterProject\res\drawable\compose_button_background.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_compose"
+                path="E:\ParseStarterProject\res\drawable-hdpi\ic_compose.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_compose_pressed"
+                path="E:\ParseStarterProject\res\drawable-hdpi\ic_compose_pressed.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_done_save_ok_blue"
+                path="E:\ParseStarterProject\res\drawable-hdpi\ic_done_save_ok_blue.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_done_save_ok_green"
+                path="E:\ParseStarterProject\res\drawable-hdpi\ic_done_save_ok_green.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="E:\ParseStarterProject\res\drawable-hdpi\ic_drawer.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="E:\ParseStarterProject\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="E:\ParseStarterProject\res\drawable-ldpi\ic_launcher.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="ic_compose"
+                path="E:\ParseStarterProject\res\drawable-mdpi\ic_compose.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_compose_pressed"
+                path="E:\ParseStarterProject\res\drawable-mdpi\ic_compose_pressed.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_done_save_ok_blue"
+                path="E:\ParseStarterProject\res\drawable-mdpi\ic_done_save_ok_blue.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_done_save_ok_green"
+                path="E:\ParseStarterProject\res\drawable-mdpi\ic_done_save_ok_green.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="E:\ParseStarterProject\res\drawable-mdpi\ic_drawer.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="E:\ParseStarterProject\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="layout_border"
+                path="E:\ParseStarterProject\res\drawable-mdpi\layout_border.xml"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="save"
+                path="E:\ParseStarterProject\res\drawable-mdpi\save.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="statement_child_seperator"
+                path="E:\ParseStarterProject\res\drawable-mdpi\statement_child_seperator.xml"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="avatar"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\avatar.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="background"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\background.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="background2"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\background2.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="date"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\date.jpg"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="date2"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\date2.jpg"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_1"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\icon_1.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_2"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\icon_2.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_3"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\icon_3.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_4"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\icon_4.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_5"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\icon_5.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_6"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\icon_6.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_compose"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\ic_compose.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_compose_pressed"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\ic_compose_pressed.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_done_save_ok_blue"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\ic_done_save_ok_blue.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_done_save_ok_green"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\ic_done_save_ok_green.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\ic_drawer.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="people"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\people.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="people2"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\people2.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="peoplet"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\peoplet.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_compose"
+                path="E:\ParseStarterProject\res\drawable-xxhdpi\ic_compose.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_compose_56"
+                path="E:\ParseStarterProject\res\drawable-xxhdpi\ic_compose_56.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_compose_pressed"
+                path="E:\ParseStarterProject\res\drawable-xxhdpi\ic_compose_pressed.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_compose_pressed_56"
+                path="E:\ParseStarterProject\res\drawable-xxhdpi\ic_compose_pressed_56.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_done_save_ok_blue"
+                path="E:\ParseStarterProject\res\drawable-xxhdpi\ic_done_save_ok_blue.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_done_save_ok_green"
+                path="E:\ParseStarterProject\res\drawable-xxhdpi\ic_done_save_ok_green.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="E:\ParseStarterProject\res\drawable-xxhdpi\ic_drawer.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="budget_category_row"
+                path="E:\ParseStarterProject\res\layout\budget_category_row.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="drawer_list_item"
+                path="E:\ParseStarterProject\res\layout\drawer_list_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="drawer_list_row"
+                path="E:\ParseStarterProject\res\layout\drawer_list_row.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="layout_add_record_screen"
+                path="E:\ParseStarterProject\res\layout\layout_add_record_screen.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="layout_bar_view_row"
+                path="E:\ParseStarterProject\res\layout\layout_bar_view_row.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="layout_budget"
+                path="E:\ParseStarterProject\res\layout\layout_budget.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="layout_home"
+                path="E:\ParseStarterProject\res\layout\layout_home.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="layout_home_page"
+                path="E:\ParseStarterProject\res\layout\layout_home_page.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="layout_home_page_chart_container"
+                path="E:\ParseStarterProject\res\layout\layout_home_page_chart_container.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="layout_statements_screen"
+                path="E:\ParseStarterProject\res\layout\layout_statements_screen.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="main"
+                path="E:\ParseStarterProject\res\layout\main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="statement_child_section_view"
+                path="E:\ParseStarterProject\res\layout\statement_child_section_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="statement_child_view"
+                path="E:\ParseStarterProject\res\layout\statement_child_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="statement_group_view"
+                path="E:\ParseStarterProject\res\layout\statement_group_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="swipe_date_view"
+                path="E:\ParseStarterProject\res\layout\swipe_date_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="menu"
+                path="E:\ParseStarterProject\res\menu\menu.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="E:\ParseStarterProject\res\values\arrays.xml"
+                qualifiers="" >
+                <array name="chart_colors" >
+                    <item>
+@color/Chart_Purple
+                    </item>
+                    <item>
+@color/Chart_Blue
+                    </item>
+                    <item>
+@color/Chart_Yellow
+                    </item>
+                    <item>
+@color/Chart_Red
+                    </item>
+                    <item>
+@color/Chart_Green
+                    </item>
+                    <item>
+@color/Chart_Darkgray
+                    </item>
+                </array>
+            </file>
+            <file
+                path="E:\ParseStarterProject\res\values\colors.xml"
+                qualifiers="" >
+                <color name="GhostWhite" >#F8F8FF
+                </color>
+                <color name="MediumVioletRed" >#C71585
+                </color>
+                <color name="Olive" >#808000
+                </color>
+                <color name="Navy" >#000080
+                </color>
+                <color name="Aqua" >#00FFFF
+                </color>
+                <color name="HotPink" >#FF69B4
+                </color>
+                <color name="LightYellow" >#FFFFE0
+                </color>
+                <color name="Ivory" >#FFFFF0
+                </color>
+                <color name="PaleGoldenrod" >#EEE8AA
+                </color>
+                <color name="MediumPurple" >#9370DB
+                </color>
+                <color name="DarkRed" >#8B0000
+                </color>
+                <color name="Khaki" >#F0E68C
+                </color>
+                <color name="SpringGreen" >#00FF7F
+                </color>
+                <color name="Goldenrod" >#DAA520
+                </color>
+                <color name="PaleTurquoise" >#AFEEEE
+                </color>
+                <color name="Gainsboro" >#DCDCDC
+                </color>
+                <color name="CadetBlue" >#5F9EA0
+                </color>
+                <color name="LightGoldenrodYellow" >#FAFAD2
+                </color>
+                <color name="DarkCyan" >#008B8B
+                </color>
+                <color name="budget_bar_chart_color" >#FF4500
+                </color>
+                <color name="Silver" >#C0C0C0
+                </color>
+                <color name="DarkSlateGray" >#2F4F4F
+                </color>
+                <color name="Violet" >#EE82EE
+                </color>
+                <color name="Azure" >#F0FFFF
+                </color>
+                <color name="MistyRose" >#FFE4E1
+                </color>
+                <color name="Crimson" >#DC143C
+                </color>
+                <color name="tab_text_color" >#000000
+                </color>
+                <color name="Chart_Red" >#C74B46
+                </color>
+                <color name="Chocolate" >#D2691E
+                </color>
+                <color name="MediumOrchid" >#BA55D3
+                </color>
+                <color name="DarkMagenta" >#8B008B
+                </color>
+                <color name="RosyBrown" >#BC8F8F
+                </color>
+                <color name="Purple" >#800080
+                </color>
+                <color name="DarkSeaGreen" >#8FBC8F
+                </color>
+                <color name="PeachPuff" >#FFDAB9
+                </color>
+                <color name="DarkOrchid" >#9932CC
+                </color>
+                <color name="Maroon" >#800000
+                </color>
+                <color name="YellowGreen" >#9ACD32
+                </color>
+                <color name="Chart_Yellow" >#F4842D
+                </color>
+                <color name="RoyalBlue" >#4169E1
+                </color>
+                <color name="AliceBlue" >#F0F8FF
+                </color>
+                <color name="NavajoWhite" >#FFDEAD
+                </color>
+                <color name="PapayaWhip" >#FFEFD5
+                </color>
+                <color name="CornflowerBlue" >#6495ED
+                </color>
+                <color name="Coral" >#FF7F50
+                </color>
+                <color name="FloralWhite" >#FFFAF0
+                </color>
+                <color name="Lime" >#00FF00
+                </color>
+                <color name="Aquamarine" >#7FFFD4
+                </color>
+                <color name="DarkOrange" >#FF8C00
+                </color>
+                <color name="Sienna" >#A0522D
+                </color>
+                <color name="Seashell" >#FFF5EE
+                </color>
+                <color name="Orchid" >#DA70D6
+                </color>
+                <color name="BurlyWood" >#DEB887
+                </color>
+                <color name="Brown" >#A52A2A
+                </color>
+                <color name="DimGray" >#696969
+                </color>
+                <color name="Pink" >#FFC0CB
+                </color>
+                <color name="Cyan" >#00FFFF
+                </color>
+                <color name="IndianRed" >#CD5C5C
+                </color>
+                <color name="WhiteSmoke" >#F5F5F5
+                </color>
+                <color name="Thistle" >#D8BFD8
+                </color>
+                <color name="OrangeRed" >#FF4500
+                </color>
+                <color name="Tan" >#D2B48C
+                </color>
+                <color name="MediumSlateBlue" >#7B68EE
+                </color>
+                <color name="Orange" >#FFA500
+                </color>
+                <color name="DarkBlue" >#00008B
+                </color>
+                <color name="DeepSkyBlue" >#00BFFF
+                </color>
+                <color name="OldLace" >#FDF5E6
+                </color>
+                <color name="LightSlateGray" >#778899
+                </color>
+                <color name="MintCream" >#F5FFFA
+                </color>
+                <color name="Black" >#000000
+                </color>
+                <color name="Fuchsia" >#FF00FF
+                </color>
+                <color name="Snow" >#FFFAFA
+                </color>
+                <color name="app_body_color" >#E4E3E4
+                </color>
+                <color name="MediumSeaGreen" >#3CB371
+                </color>
+                <color name="SteelBlue" >#4682B4
+                </color>
+                <color name="Blue" >#0000FF
+                </color>
+                <color name="LightSteelBlue" >#B0C4DE
+                </color>
+                <color name="GreenYellow" >#ADFF2F
+                </color>
+                <color name="Chart_Green" >#96AA39
+                </color>
+                <color name="LightCoral" >#F08080
+                </color>
+                <color name="Magenta" >#FF00FF
+                </color>
+                <color name="BlueViolet" >#8A2BE2
+                </color>
+                <color name="AntiqueWhite" >#FAEBD7
+                </color>
+                <color name="Indigo" >#4B0082
+                </color>
+                <color name="Chart_Purple" >#51613c
+                </color>
+                <color name="Green" >#008000
+                </color>
+                <color name="Gold" >#FFD700
+                </color>
+                <color name="LightGreen" >#90EE90
+                </color>
+                <color name="Bisque" >#FFE4C4
+                </color>
+                <color name="SaddleBrown" >#8B4513
+                </color>
+                <color name="LightPink" >#FFB6C1
+                </color>
+                <color name="DarkGoldenrod" >#B8860B
+                </color>
+                <color name="DodgerBlue" >#1E90FF
+                </color>
+                <color name="MediumTurquoise" >#48D1CC
+                </color>
+                <color name="DarkGray" >#A9A9A9
+                </color>
+                <color name="LightCyan" >#E0FFFF
+                </color>
+                <color name="LightGrey" >#D3D3D3
+                </color>
+                <color name="DarkKhaki" >#BDB76B
+                </color>
+                <color name="LawnGreen" >#7CFC00
+                </color>
+                <color name="Gray" >#808080
+                </color>
+                <color name="Chartreuse" >#7FFF00
+                </color>
+                <color name="Beige" >#F5F5DC
+                </color>
+                <color name="LimeGreen" >#32CD32
+                </color>
+                <color name="app_action_color" >#FF4081
+                </color>
+                <color name="tab_indicator_highlightcolor" >#11639f
+                </color>
+                <color name="Chart_Blue" >#3F9FE0
+                </color>
+                <color name="MediumBlue" >#0000CD
+                </color>
+                <color name="LightSalmon" >#FFA07A
+                </color>
+                <color name="app_primary" >#11639f
+                </color>
+                <color name="SlateBlue" >#6A5ACD
+                </color>
+                <color name="PaleGreen" >#98FB98
+                </color>
+                <color name="SkyBlue" >#87CEEB
+                </color>
+                <color name="LightSeaGreen" >#20B2AA
+                </color>
+                <color name="Tomato" >#FF6347
+                </color>
+                <color name="tab_indicator_color" >#878b8c
+                </color>
+                <color name="Turquoise" >#40E0D0
+                </color>
+                <color name="Yellow" >#FFFF00
+                </color>
+                <color name="White" >#FFFFFF
+                </color>
+                <color name="Teal" >#008080
+                </color>
+                <color name="DarkOliveGreen" >#556B2F
+                </color>
+                <color name="Linen" >#FAF0E6
+                </color>
+                <color name="DarkGreen" >#006400
+                </color>
+                <color name="Moccasin" >#FFE4B5
+                </color>
+                <color name="PowderBlue" >#B0E0E6
+                </color>
+                <color name="DarkTurquoise" >#00CED1
+                </color>
+                <color name="Honeydew" >#F0FFF0
+                </color>
+                <color name="LightSkyBlue" >#87CEFA
+                </color>
+                <color name="SeaGreen" >#2E8B57
+                </color>
+                <color name="DarkSalmon" >#E9967A
+                </color>
+                <color name="DarkViolet" >#9400D3
+                </color>
+                <color name="Peru" >#CD853F
+                </color>
+                <color name="Salmon" >#FA8072
+                </color>
+                <color name="MediumSpringGreen" >#00FA9A
+                </color>
+                <color name="BlanchedAlmond" >#FFEBCD
+                </color>
+                <color name="Plum" >#DDA0DD
+                </color>
+                <color name="FireBrick" >#B22222
+                </color>
+                <color name="LightBlue" >#ADD8E6
+                </color>
+                <color name="MediumAquamarine" >#66CDAA
+                </color>
+                <color name="DarkSlateBlue" >#483D8B
+                </color>
+                <color name="OliveDrab" >#6B8E23
+                </color>
+                <color name="PaleVioletRed" >#DB7093
+                </color>
+                <color name="LemonChiffon" >#FFFACD
+                </color>
+                <color name="Lavender" >#E6E6FA
+                </color>
+                <color name="Cornsilk" >#FFF8DC
+                </color>
+                <color name="DeepPink" >#FF1493
+                </color>
+                <color name="gray" >#ccc
+                </color>
+                <color name="Chart_Darkgray" >#666666
+                </color>
+                <color name="MidnightBlue" >#191970
+                </color>
+                <color name="Wheat" >#F5DEB3
+                </color>
+                <color name="ForestGreen" >#228B22
+                </color>
+                <color name="Red" >#FF0000
+                </color>
+                <color name="LavenderBlush" >#FFF0F5
+                </color>
+                <color name="tab_text_highlightcolor" >#11639f
+                </color>
+                <color name="SlateGray" >#708090
+                </color>
+                <color name="SandyBrown" >#F4A460
+                </color>
+            </file>
+            <file
+                path="E:\ParseStarterProject\res\values\CustomActionBarTheme.xml"
+                qualifiers="" >
+
+                <style
+                    name="MyActionBarTitle"
+                    parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title" >
+                    <item name="android:textColor">
+@color/White
+                    </item>
+                </style>
+
+                <style
+                    name="customActionbarTheme"
+                    parent="@android:style/Theme.Holo.Light" >
+                    <item name="android:actionBarStyle">
+@style/MyActionBar
+                    </item>
+                </style>
+
+                <style
+                    name="MyActionBar"
+                    parent="@android:style/Widget.Holo.Light.ActionBar" >
+                    <item name="android:background">
+@color/app_primary
+                    </item>
+                    <item name="android:titleTextStyle">
+@style/MyActionBarTitle
+                    </item>
+                </style>
+            </file>
+            <file
+                path="E:\ParseStarterProject\res\values\dimensions.xml"
+                qualifiers="" >
+                <dimen name="bottom_padding_dim" >5dp
+                </dimen>
+                <dimen name="top_padding_dim" >5dp
+                </dimen>
+                <dimen name="text_size_small" >14sp
+                </dimen>
+                <dimen name="right_padding_dim" >10dp
+                </dimen>
+                <dimen name="small_padding_dim" >5dp
+                </dimen>
+                <dimen name="text_size_medium" >18sp
+                </dimen>
+                <dimen name="text_Size" >22sp
+                </dimen>
+                <dimen name="left_padding_dim" >10dp
+                </dimen>
+                <dimen name="circle_width" >0.1in
+                </dimen>
+            </file>
+            <file
+                path="E:\ParseStarterProject\res\values\strings.xml"
+                qualifiers="" >
+                <string name="record_date" >日期
+                </string>
+                <string name="record_warning" >请输入金额
+                </string>
+
+                <string-array name="record_categories" >
+                    <item>
+早中晚饭
+                    </item>
+                    <item>
+行车交通
+                    </item>
+                    <item>
+房租住宿
+                    </item>
+                    <item>
+服装饰品
+                    </item>
+                    <item>
+娱乐腐败
+                    </item>
+                    <item>
+生活杂项
+                    </item>
+                </string-array>
+                <string-array name="record_account_types" >
+                    <item>
+现金支付
+                    </item>
+                    <item>
+银行卡
+                    </item>
+                    <item>
+支付宝等
+                    </item>
+                </string-array>
+
+                <string name="budget_used" >已用：
+                </string>
+
+                <string-array name="drawer_list_item" >
+                    <item>
+主页
+                    </item>
+                    <item>
+账本
+                    </item>
+                    <item>
+流水
+                    </item>
+                    <item>
+统计
+                    </item>
+                    <item>
+预算
+                    </item>
+                    <item>
+设置
+                    </item>
+                </string-array>
+
+                <string name="hello" >Hello World, ParseStarterProjectActivity!
+                </string>
+                <string name="homt_tab_other" >对方消费
+                </string>
+                <string name="home_tab_me" >我的消费
+                </string>
+                <string name="record_warning_dialog_button" >确定
+                </string>
+                <string name="budget_category_left" >余额：
+                </string>
+                <string name="login" >登入
+                </string>
+                <string name="record_save_again" >保存再记
+                </string>
+                <string name="drawclose" >Close Drawer
+                </string>
+                <string name="budget_left" >结余：
+                </string>
+                <string name="login_passwd_hint" >密码
+                </string>
+                <string name="budget_category_total" >总额：
+                </string>
+                <string name="record" >记一笔
+                </string>
+                <string name="homt_tab_total" >总计消费
+                </string>
+                <string name="register" >注册
+                </string>
+                <string name="budget_total" >总预算：
+                </string>
+                <string name="statement_left" >&lt;
+                </string>
+                <string name="login_user_hint" >用户名或邮箱
+                </string>
+                <string name="record_account" >账户
+                </string>
+                <string name="record_category" >类别
+                </string>
+                <string name="drawopen" >Open Drawer
+                </string>
+                <string name="app_name" >老婆管账
+                </string>
+                <string name="budget_edit_done_btn" >确定
+                </string>
+                <string name="circle_total" >预算
+                </string>
+                <string name="circle_spent" >消费
+                </string>
+                <string name="statement_right" >>
+                </string>
+                <string name="record_amount" >金额
+                </string>
+            </file>
+            <file
+                name="dashicon_lock"
+                path="E:\ParseStarterProject\res\drawable-mdpi\dashicon_lock.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="dashicon_admin_users"
+                path="E:\ParseStarterProject\res\drawable-hdpi\dashicon_admin_users.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="dashicon_lock"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\dashicon_lock.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="dashicon_lock"
+                path="E:\ParseStarterProject\res\drawable-xxhdpi\dashicon_lock.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="dashicon_admin_users"
+                path="E:\ParseStarterProject\res\drawable-xhdpi\dashicon_admin_users.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="dashicon_admin_users"
+                path="E:\ParseStarterProject\res\drawable-xxhdpi\dashicon_admin_users.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="dashicon_lock"
+                path="E:\ParseStarterProject\res\drawable-hdpi\dashicon_lock.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="dashicon_admin_users"
+                path="E:\ParseStarterProject\res\drawable-mdpi\dashicon_admin_users.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="layout_sign_in"
+                path="E:\ParseStarterProject\res\layout\layout_sign_in.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="sign_in_screen"
+                path="E:\ParseStarterProject\res\layout\sign_in_screen.xml"
+                qualifiers=""
+                type="layout" />
+        </source>
+        <source path="E:\ParseStarterProject\build\generated\res\rs\debug" />
+        <source path="E:\ParseStarterProject\build\generated\res\generated\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="E:\ParseStarterProject\build-types\debug\res" />
+    </dataSet>
+
+</merger>

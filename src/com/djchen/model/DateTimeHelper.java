@@ -30,7 +30,7 @@ public class DateTimeHelper {
 	}
 	
 	public String getReadableDateString() {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄê-MMÔÂ", Locale.CHINESE);
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM", Locale.CHINESE);
 		return sdf.format(new Date(this.year - 1900, this.month + 1, 0));
 	}
 

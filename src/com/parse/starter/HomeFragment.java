@@ -17,6 +17,7 @@ import android.view.View.OnClickListener;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.content.Intent;
 
 public class HomeFragment extends CustomFragment implements TabChangeListener{
 	
@@ -79,6 +80,7 @@ public class HomeFragment extends CustomFragment implements TabChangeListener{
 				ft.replace(R.id.container, addRecord);
 				ft.addToBackStack(null);
 				ft.commit();
+
 			}
 		});
 		return view;

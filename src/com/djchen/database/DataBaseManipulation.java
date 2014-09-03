@@ -48,11 +48,6 @@ public class DataBaseManipulation {
 			db.close();
 	}
 	
-	/**
-	 * ÏòÊı¾İ¿âÌí¼ÓĞÂµÄÏû·Ñ¼ÇÂ¼
-	 * @param record 
-	 * @return ·µ»Ø²åÈë¼ÇÂ¼µÄid
-	 */
 	public long addRecord(Record record) {
 		ContentValues value = new ContentValues();
 		value.put(Record.RECORD_TYPE, record.getRecordType());
@@ -69,9 +64,9 @@ public class DataBaseManipulation {
 	}
 	
 	/**
-	 * ¸ù¾İrecord_id ²éÑ¯Ïû·Ñ¼ÇÂ¼Ïà¹ØµÄĞÅÏ¢
+	 * ï¿½ï¿½ï¿½record_id ï¿½ï¿½Ñ¯ï¿½ï¿½Ñ¼ï¿½Â¼ï¿½ï¿½Øµï¿½ï¿½ï¿½Ï¢
 	 * @param record_id
-	 * @return ·µ»ØÏû·Ñ¼ÇÂ¼¶ÔÏó
+	 * @return ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¼ï¿½Â¼ï¿½ï¿½ï¿½ï¿½
 	 */
 	public Record getRecord(long record_id) {
 		String selectQuery = " SELECT * FROM " + DataBaseHelper.TABLE_RECORD 
@@ -100,10 +95,10 @@ public class DataBaseManipulation {
 	}
 	
 	/**
-	 * µÃµ½Ä³Ò»Ê±¼ä¶ÎÄÚµÄËùÓĞÏû·Ñ¼ÇÂ¼
-	 * @param fromDate ÆğÊ¼Ê±¼ä
-	 * @param toDate ÖÕÖ¹Ê±¼ä
-	 * @return ´ËÊ±¼ä¶ÎÄÚµÄËùÓĞÏû·Ñ¼ÇÂ¼µÄÊı×é
+	 * ï¿½Ãµï¿½Ä³Ò»Ê±ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¼ï¿½Â¼
+	 * @param fromDate ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
+	 * @param toDate ï¿½ï¿½Ö¹Ê±ï¿½ï¿½
+	 * @return ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¼ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	public ArrayList<Statement> queryStatements(String fromDate, String toDate) {
 		String querySql = " SELECT " + Record.RECORD_TYPE + ", " + Record.RECORD_AMOUNT
@@ -146,7 +141,7 @@ public class DataBaseManipulation {
 	}
 	
 	/**
-	 * µÃµ½ÔÚÒ»¶ÎÊ±¼äÄÚµÄÃ¿Ò»ÌìËù¶ÔÓ¦µÄÏû·Ñ¼ÇÂ¼µÄÌõÊı
+	 * ï¿½Ãµï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Úµï¿½Ã¿Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ñ¼ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @param fromDate
 	 * @param toDate
 	 * @return 
@@ -175,7 +170,7 @@ public class DataBaseManipulation {
 	}
 	
 	/**
-	 * ÏëÊı¾İ¿âÖĞ²åÈë»òÕß¸üĞÂÊı¾İ¿âÖĞÒÑÓĞµÄÊı¾İ
+	 * ï¿½ï¿½ï¿½ï¿½İ¿ï¿½ï¿½Ğ²ï¿½ï¿½ï¿½ï¿½ï¿½ß¸ï¿½ï¿½ï¿½ï¿½ï¿½İ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½
 	 * @param budget
 	 */
 	public void updateOrInsertBudget(Budget budget) {
@@ -199,14 +194,14 @@ public class DataBaseManipulation {
 	}
 	
 	/**
-	 * µÃµ½ÔÚ¸ø¶¨Ê±¼ä¶ÎÄÚ£¬Ö¸¶¨ÀàĞÍµÄÔ¤ËãµÄĞÅÏ¢£¬°üÀ¨Ô¤Ëã½ğ¶î£¬ÒÑÊ¹ÓÃ½ğ¶îµÈ
-	 * @param budgetType Ö¸¶¨µÄÔ¤ËãÀàĞÍ
-	 * @param startDate ÆğÊ¼Ê±¼ä
-	 * @param endDate  ÖÕÖ¹Ê±¼ä
+	 * ï¿½Ãµï¿½ï¿½Ú¸ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ú£ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½î£¬ï¿½ï¿½Ê¹ï¿½Ã½ï¿½ï¿½ï¿½
+	 * @param budgetType Ö¸ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * @param startDate ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
+	 * @param endDate  ï¿½ï¿½Ö¹Ê±ï¿½ï¿½
 	 */
 	public BudgetEntry queryBudgetAmountAndCost(String budgetType, String startDate, String endDate) {
 		
-		//µÃµ½»ù±¾µÄÔ¤Ëã¶î¶È
+		//ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½
 		Budget budget = this.queryBudget(budgetType);
 		double spentAmount = this.queryTotalSpentForBudget(budgetType, startDate, endDate);
 		return new BudgetEntry(budgetType, budget.getBudgetAmount(), spentAmount);		
@@ -230,7 +225,7 @@ public class DataBaseManipulation {
 	}
 	
 	/**
-	 *µÃµ½Ö¸¶¨ÀàĞÍµÄÔ¤ËãµÄÏà¹ØĞÅÏ¢, Èç¹ûÊı¾İ¿âÖĞÃ»ÓĞÖ¸¶¨µÄÔ¤ËãÀàĞÍ£¬ÄÇÃ´·µ»ØÔ¤ËãÖµÎª0
+	 *ï¿½Ãµï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢, ï¿½ï¿½ï¿½ï¿½ï¿½İ¿ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ÖµÎª0
 	 * @param budgetType
 	 * @return
 	 */

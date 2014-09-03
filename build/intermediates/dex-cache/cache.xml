@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\avosstatistics-v2.6.2-cbaccfddd888a661314b341eaf389699722ed800.jar"
+        jar="E:\ParseStarterProject\libs\avosstatistics-v2.6.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8ff81f6803373040427ab6cbfa3f8e900e1e5195"/>
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\weibo.sdk.android.sso-d37d76ef5b199d63d0e954985837c5882e2dfa75.jar"
+        jar="E:\ParseStarterProject\libs\weibo.sdk.android.sso.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e81daa09ae0ba8614ac736487b55fe3bb7679b87"/>
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\android-support-v4-1ec588e47fe3f2edc091350a01b32fc2dbeb05fc.jar"
+        jar="E:\ParseStarterProject\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ded9acc6a9792b8f1afc470f0c9cd36d178914cd"/>
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\fastjson-870bfa634071ffc2d944fb25b104e6d9857b7d0a.jar"
+        jar="E:\ParseStarterProject\libs\fastjson.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d449ce9b6023c059db09be5170229162a77e007a"/>
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\android-async-http-1.4.4-fix-71296f4c6be36bd9c510a1c05454f120669d0f5a.jar"
+        jar="E:\ParseStarterProject\libs\android-async-http-1.4.4-fix.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="c995018b56f9be5716903c7bffbae0e1ee758af6"/>
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\httpmime-4.2.4-3f8d5cb8f8b69290e32bf92a377a2eb28d3fa530.jar"
+        jar="E:\ParseStarterProject\libs\httpmime-4.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="dba4d4d224e2ca872af5be8d2992777583145478"/>
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\avoscloud-v2.6.2-e45e9272734070ff0acf7fefc872bbce945c9d30.jar"
+        jar="E:\ParseStarterProject\libs\avoscloud-v2.6.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6cb53269cbcc0997c006a9724695e38562644089"/>
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\qq.sdk.1.6.1-b449f8835cf90fae4ec8f6a6b4fb73eacf08357c.jar"
+        jar="E:\ParseStarterProject\libs\qq.sdk.1.6.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="896145203364b9e1d055cb81ac127bab139ad91d"/>
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\avospush-v2.6.2-f5e21b036a40c73e113af41954170455524a7f0f.jar"
+        jar="E:\ParseStarterProject\libs\avospush-v2.6.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d4163a808db13747049c71b3bc72de8ef8fab292"/>
+    <item
+        dex="E:\ParseStarterProject\build\intermediates\pre-dexed\debug\avossns-v2.6.2-761930f11310785b376b936411cf0e8949dd9cae.jar"
+        jar="E:\ParseStarterProject\libs\avossns-v2.6.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="fcbcb98a5e24dd1ee39d1429443b4f8d7410d236"/>
+
+</pre-dex-items>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="fill_parent"
+     android:background="@color/app_body_color">
+     <LinearLayout 
+         android:id="@+id/tab"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <Button android:id="@+id/btn_user"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="0dp"
+             android:background="@color/app_body_color"
+             android:layout_weight="1"
+             android:textColor="@color/tab_text_color"/>
+         <Button android:id="@+id/btn_associate"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="0dp"
+             android:background="@color/app_body_color"
+             android:layout_weight="1"
+             android:textColor="@color/tab_text_color"/>
+         <Button android:id="@+id/btn_total"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="0dp"
+             android:background="@color/app_body_color"
+             android:layout_weight="1"
+             android:textColor="@color/tab_text_color"/>
+     </LinearLayout>
+          <LinearLayout 
+         android:id="@+id/indicator"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_below="@id/tab">
+         <View android:id="@+id/btn_user_indicator"
+             android:layout_width="fill_parent"
+             android:layout_height="4dp"
+             android:layout_margin="0dp"
+             android:background="@color/app_body_color"
+             android:layout_weight="1"/>
+         <View android:id="@+id/btn_associate_indicator"
+             android:layout_width="fill_parent"
+             android:layout_height="4dp"
+             android:layout_margin="0dp"
+             android:background="@color/app_body_color"
+             android:layout_weight="1"/>
+         <View android:id="@+id/btn_total_indicator"
+             android:layout_width="fill_parent"
+             android:layout_height="4dp"
+             android:layout_margin="0dp"
+             android:background="@color/app_body_color"
+             android:layout_weight="1"/>
+     </LinearLayout>
+     
+<android.support.v4.view.ViewPager 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/pager"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/indicator"
+   android:layout_weight="1">
+</android.support.v4.view.ViewPager>
+
+<Button android:id="@+id/add_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/record"
+    android:textColor="#ccc"
+    android:background="@color/app_primary"
+    android:textSize="28sp"
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"/>
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp">
+    <ImageButton 
+    android:id="@+id/compose_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/compose_button_background"
+    android:layout_alignParentRight="true"
+
+    android:layout_marginRight="10dp"
+    android:contentDescription="add a new record"/>
+</RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/E:/ParseStarterProject/res/layout/layout_home.xml -->

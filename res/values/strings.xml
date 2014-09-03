@@ -21,7 +21,14 @@
     <string name="budget_category_left">余额：</string>
     <string name="budget_edit_done_btn">确定</string>
     
-    
+    <string-array name="drawer_list_item">
+        <item>主页</item>
+        <item>账本</item>
+        <item>流水</item>
+        <item>统计</item>
+        <item>预算</item>
+        <item>设置</item>
+    </string-array>
     
     
     <string-array name="record_categories">
@@ -48,4 +55,9 @@
     <string name="home_tab_me">我的消费</string>
     <string name="homt_tab_other">对方消费</string>
     <string name="homt_tab_total">总计消费</string>
+
+    <string name="login">登入</string>
+    <string name="register">注册</string>
+    <string name="login_user_hint">用户名或邮箱</string>
+    <string name="login_passwd_hint">密码</string>
 </resources>
